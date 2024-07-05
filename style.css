@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+html{
+  
+}
+
+#home{
+  background-image:linear-gradient( rgba(0, 0, 0, 0.5),rgb(46, 46, 63)) ,url("./images/voyage-de-rêve.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 10px 10%;
+
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+}
+.logo{
+  align-items: center;
+  
+}
+
+.logo h1{
+  font-family: "Island Moments", cursive;
+  color: white;
+  font-size: 90px;
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 3px;  
+
+}
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu li{
+  margin-left: 20px;
+  list-style: none;
+
+}
+.menu li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  margin: 20px;
+}
+
+.menu li a:hover{
+  
+  letter-spacing: 2px;
+
+}
+.container{
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container h1{
+  padding: 20px;
+  color: white;
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 40px;
+
+}
+.container p{
+  color: white;
+  margin: 20px auto;
+  font-size: 16px;
+}
+.butn{
+  padding: 10px 10px;
+  border:1px solid rgb(152, 152, 196);
+  border-radius: 30px;
+  text-transform:uppercase;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 30px;
+}
+.butn:hover{
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+.propos h2{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  color: rgb(80, 171, 224);
+  text-transform:uppercase ;
+  font-weight:bold;
+  letter-spacing: 3px;
+}
+.propos p{
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+}
+
+.col-8 {
+  width: 66.66%;
+  padding: 10px;
+  margin: 10px;
+  float: left;
+
+}
+.col-md-8 p{
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+
+}
+.col-md-8 h2{
+  text-align: center;
+  margin-top: 30px;
+  font-size:20px;
+  color:black;
+  text-transform:uppercase ;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+}
+.col-4 {
+  width: 33.33%;
+  padding: 10px;
+  margin-top: 60px;
+}
+.img-fluid{
+  width: 90%;
+  height: 90%;
+  box-shadow: 0 0 26px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.flex-container{
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 20px;
+  
+}
+.item{
+  flex-direction: column;
+  align-items: center;
+  
+  box-shadow: 0 0 26px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  width: 31%;
+  align-self: center;
+  height: 100%;
+  padding: 25px 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.item p{
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 500;
+  
+  margin-top: 10px;
+}
+
+.item i{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 26px rgba(0,0,0,0.3);
+  border: 1px solid rgb(37, 37, 231);
+  border-radius: 50%;
+  color:rgb(40, 40, 54);
+
+  
+}
+.item:hover{
+  background-color:rgb(183, 210, 231);
+}
+.item:hover i{
+  background-color: #fff;
+  transition: 0.5s;
+}
+.destination{
+  height: 120vh;
+}
+.destination h2{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  color: rgb(80, 171, 224);
+  text-transform:uppercase ;
+  font-weight:bold;
+  letter-spacing: 3px;
+}
+.destination p{
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+}
+.det-img{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 10px;
+}
+.image{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+.destination img{
+  width: 500px;
+  height:300px;
+  margin-top: 10px;
+  box-shadow: 0 0 26px rgba(0,0,0,0.1);
+  border-radius: 20px;
+}
+.destination img:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 0 0 26px rgba(0,0,0,0.1);
+}
+.contact{
+  height: 100vh;
+}
+.contact h2{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  color: rgb(80, 171, 224);
+  text-transform:uppercase ;
+  font-weight:bold;
+  letter-spacing: 3px;
+}
+.contact p{
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+}
+.container-contact{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+
+}
+.formulaire{
+  width: 50%;
+  height:400px;
+  margin-left: 30px;
+  box-shadow: 0 0 26px rgba(0,0,0,0.1);
+  border: 1px solid rgb(80, 171, 224);
+  border-radius: 20px;
+  display:flex;
+  padding: 10px 20px;
+  display: block;
+}
+.formulaire label{
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+input[type="email"]{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid rgb(80, 171, 224);
+  border-radius: 20px;
+  outline: none;
+
+}
+#exampleFormControlTextarea1{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid rgb(80, 171, 224);
+  border-radius: 20px;
+  outline: none;
+}
+input[type="button"]{
+
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: 1px solid rgb(80, 171, 224);
+  border-radius: 20px;
+  outline: none;
+  background-color: rgb(80, 171, 224);
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  text-transform:uppercase;
+}
+input[type="button"]:hover{
+  letter-spacing: 3px;
+  font-size: 17px;
+
+}
+
+.imgee{
+  width: 80%;
+  height: 80%;
+  box-shadow: 0 0 26px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  margin:20px ;
+}
+footer img{
+  width: 500px;
+  height:300px;
+  margin-top: 10px;
+  box-shadow: 0 0 26px rgba(0,0,0,0.1);
+  border-radius: 20px;
+}
+footer img:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 0 0 26px rgba(0,0,0,0.1);
+}
